@@ -1,0 +1,41 @@
+body {
+    background-color: grey;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: line;
+}
+
+main {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+main > ul {
+    text-align: left;
+}
+
+
