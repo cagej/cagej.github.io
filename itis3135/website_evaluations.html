@@ -7,24 +7,8 @@
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <header>
-        <h1> Cage Jennings's Cool Jaguar || ITIS 3135 </h1>
-        <nav>
-            <a href="./">Home</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="tables.html">Tables</a>
-            ||
-            <a href="forms.html">Form</a>
-            ||
-            <a href="website_evaluations.html">Website Evaluations</a>   
-            ||
-            <a href="stuff/@random WEBPAGE.htm">Stuff</a>      
-        </nav>
-    </header>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.js"></script>  
     <main>
         <h2> Website Evaluations </h2>
         <section style="text-align:left">
@@ -48,30 +32,8 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <nav>
-            <a href="https://webpages.uncc.edu/cjenni26/">Charlotte.edu</a>
-            ||
-            <a href="https://github.com/cagej/cagej.github.io">Github</a>
-            ||
-            <a href="https://cagej.github.io/itis3135">Github.io</a>
-            ||
-            <a href="https://www.freecodecamp.org/cage">freeCodeCamp</a>
-            ||
-            <a href="https://www.codecademy.com/profiles/cagej">Codecademy</a>
-            ||
-            <a href="https://www.linkedin.com/in/cage-jennings-9198072aa/">LinkedIn</a>
-
-        </nav>
-        <p>Page built by <a href="cooljaguar.com">Cool Jaguar LLC</a> &copy; 2023 </p>
-
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-           </a>
-           <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-             </a>
-        </footer>   
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script> 
         <script>
             document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
                 document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
