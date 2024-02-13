@@ -20,7 +20,6 @@ main {
     margin-right: 20%;
 }
 
-
 h2 {
     text-align: center;
 }
@@ -85,13 +84,18 @@ form {
     padding-bottom: 2em;
   }
 
-  fieldset {
+fieldset {
     padding: 3rem 1;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
 }
-  
+    
 label {
     display: block;
     margin: 0.5rem 0;
-  }
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
