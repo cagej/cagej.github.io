@@ -14,20 +14,21 @@
         <p>Please fill out all the questions below:</p>
         <form method="post" action="#">
             <fieldset>
-                <label for="first-name">Enter your first name: <input id="first-name" name="first-name" type="text" required /></label>
-                <label for="last-name">Enter your last name: <input id="last-name" name="last-name" type="text" required /></label>
-                <label for="phone">Enter your phone number: <input id="phone" name="phone" type="tel" required /></label>
+                <legend>Buyer Information</legend>
+                <label for="first-name">Enter your first name: <input id="first-name" name="first-name" type="text" placeholder="Michael" required /></label>
+                <label for="last-name">Enter your last name: <input id="last-name" name="last-name" type="text" placeholder="Jordan" required /></label>
+                <label for="phone">Enter your phone number: <input id="phone" name="phone" type="tel" placeholder="828-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /></label>
                 <label for="email">Enter your email: <input id="email" name="email" type="email" placeholder="example@gmail.com" required /></label> 
             </fieldset>
             <fieldset>
-                <legend>Buyer information</legend>
+                <legend>Reason for purchase</legend>
                 <label for="personal"><input id="personal" type="radio" name="buyer" class="inline" checked /> Personal</label>
                 <label for="business"><input id="business" type="radio" name="buyer" class="inline" checked /> Business</label>
             </fieldset>
             <fieldset>
+                <legend>Tell us more</legend>
                 <label for="jaguar-type">Please select the jaguar you are interested in:
                     <select id="jaguar-type" name="jaguar-type">
-                        <option value="">(select one)</option>
                         <option value="1">Golden Male</option>
                         <option value="2">Golden Female</option>
                         <option value="3">Black Male</option>
@@ -35,7 +36,13 @@
                     </select>
                 </label>
                 <label for="bio">Please tell us more:
-                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I want a jaguar because..."></textarea>
+                    <textarea id="bio" name="bio" rows="4" cols="40" placeholder="I want a jaguar because..."></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="mailing-list">
+                    <input id="mailing-list" name="mailing-list" type="checkbox" class="inline" required>
+                    I want to sign up for emails.
                 </label>
             </fieldset>
             <input type="reset" value="Reset" />
