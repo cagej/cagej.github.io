@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cage Jennings's Cool Jaguar || ITIS 3135 || First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.js"></script>  
+    <script src="scripts/defaultscripts.js"></script>
+    <main>
+        <p id="get-personal"></p>
+        <form action="#" method="get" id="info-form">
+            <fieldset>
+                <Legend>Fill this out</Legend>
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" placeholder="Michael Jordan" required />
+                <label for="feeling">How are we feeling?</label>
+                <input type="text" id="feeling" placeholder="Good" required />
+                <label for="num-entry">Enter a number between 1-10</label>
+                    <input type="number" id="num-entry" min="0" max="10" placeholder="0-10" required />
+            </fieldset>
+            <input type="submit">
+        </form>
+
+    <h3>Five Functions</h3>
+    <div>
+        <button id="Func1">Func1</button>
+        <button id="func2">Func2</button>
+        <button id="func3">Func3</button>
+        <button id="func4">Func4</button>
+        <button id="func4">Func5</button>
+    </div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script> 
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>   
+    </body>
+</html>
