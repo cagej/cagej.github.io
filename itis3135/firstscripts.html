@@ -9,35 +9,40 @@
 
 <body>
     <div data-include="components/header.html"></div>
-    <script src="scripts/include.js"></script>  
-    <script src="scripts/defaultscripts.js"></script>
+
     <main>
-        <p id="get-personal"></p>
-        <form action="#" method="get" id="info-form">
+        <h2>First Scripts</h2>
+        <h3 id="date-heading"></h3>
+        <p id="personal-info"></p>
+
+        <form action="#" method="get" id="personal-info-form">
             <fieldset>
                 <Legend>Fill this out</Legend>
-                <label for="user-name">Your Name</label>
-                <input type="text" id="user-name" placeholder="Michael Jordan" required />
-                <label for="feeling">How are we feeling?</label>
-                <input type="text" id="feeling" placeholder="Good" required />
-                <label for="num-entry">Enter a number between 1-10</label>
-                    <input type="number" id="num-entry" min="0" max="10" placeholder="0-10" required />
+                <label for="user-name">Your Name: <input type="text" id="user-name" placeholder="Michael Jordan" required></label>
+                <label for="feeling">How are we feeling?: <input type="text" id="feeling" placeholder="Good" required></label>
+                <label for="number-entry">Enter a number between 1-10: <input type="number" id="number-entry" min="0" max="10" placeholder="0-10" required /></label>
             </fieldset>
             <input type="submit">
         </form>
 
-    <h3>Five Functions</h3>
-    <div>
-        <button id="Func1">Func1</button>
-        <button id="func2">Func2</button>
-        <button id="func3">Func3</button>
-        <button id="func4">Func4</button>
-        <button id="func4">Func5</button>
-    </div>
+        <img hidden id="myimg" src="images/honda_accord.jpg">
+
+        <h3>Five Functions</h3>
+        <div>
+            <button onclick="toggle();" id="honda">Honda</button>
+            <button id="whiteout">Flashbang</button>
+            <button id="blackout">Blackout</button>
+            <button id="showMoney">Show me the money</button>
+            <button id="jaguarGrowl">Grrrr</button>
+        </div>
     </main>
+
+    <div class="myimage" data-image="myimage">ll</div>
+
 
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script> 
+    <script src="scripts/firstscripts.js"></script>
         <script>
             document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
                 document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);

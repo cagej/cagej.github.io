@@ -1,45 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Jaguar Design Page</title>
     <style>
+
         body {
             background-color: #C1CAD6;
             color: #357266;
-            font-size: 26px;
+            font-size: 24px;
         }
+
+        hr {
+            height: 1.5px;
+            background-color: darkslategrey;
+        }
+
+        #logo {
+            filter: drop-shadow(4px 2px 4px black);
+        }
+
+        #header-text {
+            border-radius: 2.5%;
+            padding: 6px;
+        }
+
+        #header-logo {
+            display: flex;
+            width: 1080px;
+            gap: 10px;
+        }
+
+        #contact {
+            font-weight: bold;
+            font-style: italic;
+        }
+
         </style>
-</head>
-<body>
+    </head>
+
+    <body>
+    <header>
+        <div id="header-logo">
+            <img id="logo" src="cimages/jaguar - Copy.png" alt="jaguar" width="430" height="230">
+            <div id="header-text">
+                <h1>Cool Jaguar</h1>
+                <hr>
+                <i>"If money could buy better, there'd be nothing to buy."</i>
+            </div>
+        </div>
+    </header>
+
     <main>
-        <img src="cimages/jaguar - Copy.png" alt="jaguar" style="height:404px"> 
-        <h2 style="text-align: center">Cage's Jaguars</h2>
-        <p>Cage's Jaguars specializes the caring for and distribution of jaguars. 
+        <h2>Cage's Jaguars Services:</h2>
+        <p>Cage's Jaguars specializes in the caring for and distribution of jaguars. 
         We have over 10 years of experience in the jaguar trade and are 
         one of the most trusted companies in the business. We work closely with jaguar distributors all over the world, 
-        so even if we don't carry what you're looking for, we can help you find someone who does.</p>
-        <p>Things that set us apart:</p> 
+        so even if we don't carry what you're looking for we can help you find someone who does.</p>
+        <h2>Things that set us apart:</h2> 
         <ul>
             <li>We are ranked 3rd on Forbe's "Best Jaguar Distributors of 2023" list.</li>
             <li>We have 12 years in the business, the 2nd longest of any current company.</li>
             <li>We work closely with WWF.</li>
-            <li>We currently care for six injured jaguars.</li>
+            <li>Jaguars are cool.</li>
             <li>We were ranked "best jaguar company" by Times Magazine in 
                 2015, 2016, 2019, and 2021.</li>
         </ul>
         <p>We would love to help you find the perfect jaguar for your personal/business needs. 
             You can make an appointment or inquiry with our contact infomation listed below.</p>
-        <p style="text-align: center"><b>We currently are not accepting any in-person visits without an appointment.</b></p>
+        </main>
+
         <footer>
-        <ul>
+        <hr>
+        <div id="contact">
             <p>cagesjaguars@gmail.com</p>
             <p>(828) 328-9901</p>
             <p>7362 Shady Dr, Charlotte, NC, 28261</p>
             <p>Hours: Monday-Thursday 11am-5pm</p>
-        </ul>
+        </div>
+    
+        <p>Page created by Cage Jennings &copy; 2024</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>
         </footer>
-    </main>
-</body>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </body>
 </html>

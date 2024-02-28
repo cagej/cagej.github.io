@@ -105,34 +105,32 @@ table {
     list-style-position: inside;
 }
 
-#colorbox {
-    height:200px;
-    width:200px;
-    background:blue;
-    margin:50px auto;
+#intro-container {
+    box-sizing: border-box;
 }
 
-main, .maincontainer {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
+#myimg {
+    height: 375x;
+    width: 525px;
 }
 
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    #colorbox {
-        background-color:yellow;
+    body {
+        font-size: 100%;
     }
 }
+
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    #colorbox {
-        background-color:orange;
+    body {
+        font-size: 75%;
     }
 }
+
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    #colorbox {
-        background-color:red;
-    }
+   body {
+        font-size: 65%;
+   }
 }
