@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cage Jennings's Cool Jaguar || ITIS 3135 || About</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body class="customBody">
+    <div data-include="components/header.html"></div>
+    
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button class="key-btn-operator" onclick="appendToDisplay('+')">+</button>
+            <button class="key-btn" onclick="appendToDisplay('7')">7</button>
+            <button class="key-btn" onclick="appendToDisplay('8')">8</button>
+            <button class="key-btn" onclick="appendToDisplay('9')">9</button>
+            <button class="key-btn-operator" onclick="appendToDisplay('-')">-</button>
+            <button class="key-btn" onclick="appendToDisplay('4')">4</button>
+            <button class="key-btn" onclick="appendToDisplay('5')">5</button>
+            <button class="key-btn" onclick="appendToDisplay('6')">6</button>
+            <button class="key-btn-operator" onclick="appendToDisplay('*')">*</button>
+            <button class="key-btn" onclick="appendToDisplay('1')">1</button>
+            <button class="key-btn" onclick="appendToDisplay('2')">2</button>
+            <button class="key-btn" onclick="appendToDisplay('3')">3</button>
+            <button class="key-btn-operator" onclick="appendToDisplay('/')">/</button>
+            <button class="key-btn" onclick="appendToDisplay('0')">0</button>
+            <button class="key-btn" onclick="appendToDisplay('.')">.</button>
+            <button class="key-btn" onclick="calculate()">=</button>
+            <button class="key-btn-operator" onclick="clearDisplay()">AC</button>
+        </div>
+    </div>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script> 
+    <script src="scripts/calculator_try.js"></script>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </body>
+</html>
