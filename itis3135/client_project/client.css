@@ -1,0 +1,82 @@
+    body {
+        background-color: lightsteelblue;
+        color: darkred;
+        font-size: 24px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    h1, h2, h3, nav {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    #link2 {
+        text-shadow: none;
+        color: darkred;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+      }
+
+    .caption {
+        text-align: center;
+        font-style: italic;
+    }
+
+    .center2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+    }
+
+    .center3 {
+        margin-right: auto;
+        display: flex;
+        width: 35%;
+    }
+
+    p, #apply-form, #list, .caption {
+        color: #1c1c1c;
+    }
+
+   #footer {
+    text-align: center;
+   }
+
+    /* Rule Overrides For Laptops / Small Screens */
+    @media screen and (min-width: 981px) and (max-width: 1400px) {
+        body {
+            font-size: 100%;
+        }
+    }
+
+    /* Rule Overrides For Tablet Devices */
+    @media screen and (min-width: 601px) and (max-width: 980px) {
+        body {
+            font-size: 75%;
+        }
+    }
+
+    /* Rule Overrides For Mobile Devices */
+    @media screen and (min-width: 370px) and (max-width: 600px) {
+        body {
+            font-size: 65%;
+        }
+    }   
+
+
+    
