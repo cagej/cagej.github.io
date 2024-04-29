@@ -130,6 +130,7 @@
     }
 
     footer {
+        border-top: 3px solid white;   
         text-align: center;
     }
 
