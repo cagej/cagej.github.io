@@ -64,5 +64,5 @@ const priorWork = (inputJob) => {
 
 applyForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    buildIntroPage();
+    jobExp();
 });
