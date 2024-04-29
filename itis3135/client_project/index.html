@@ -5,133 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cage Jennings's Cool Jaguar || ITIS 3135 || Client Project</title>
     <link rel="stylesheet" href="client.css">
+    <div data-include="cheader.html"></div>
 </head>
 
 <body>
-   <header>
-        <h1>Client Project</h1>
-        <nav>
-            <a href="#home" onclick="showHome()">Home</a>
-            +
-            <a href="#about" onclick="showAbout()">About</a>
-            +
-            <a href="#locations" onclick="showLocations()">Drop-Off Locations</a>
-            +
-            <a href="#contact" onclick="showContact()">Contact Us</a>
-            +
-            <a href="#application" onclick="showApplication()">Job Application</a>
-            +
-            <a href="#routes" onclick="showRoutes()">Routes</a>
-        </nav>
-   </header>
-
-   <main>
-        <section id="home">
-            <h2>Home</h2>
-            <h3>Welcome to <i>Barone Sanitation</i></h3>
-            <p>
-                Barone Sanitation is the largest waste management site in the greater NJ area. We offer garbage <a id="link2" href="#routes" onclick="showRoutes()" target="_blank"><b>pickup</b></a> and 
-                <a id="link2" href="#locations" onclick="showLocations()" target="_blank"><b>dropoff</b></a>, click to find out if your address is within reach for our services. 
-                We are open from 4am-2pm Monday-Friday and 6am-4pm Saturday-Sunday. 
-                For phone or email information visit the <i>Contact</i> page. Applications are available online in the <i>Application</i> page.
+    <main>
+        <div class="home-container">
+        <div class="parallax"></div>
+        <div class="centered"><h2>Barone Sanitation</h2><br>est. 1930</div>
+            <p class="home-page">
+                Barone Sanitation is the largest waste management site in the greater NJ area. We offer garbage <a id="link2" href="routes.html" target="_blank"><b>pickup</b></a> and 
+                <a id="link2" href="locations.html" target="_blank"><b>dropoff</b></a>, 7 days a week.<br>
+                Our hours of operation are from 4am-6pm Monday-Friday and 6am-6pm Saturday-Sunday.<br>
+                Our phone and email information can be found on the <a id="link2" href="contact.html" target="_blank"><b>contact</b></a> page.<br>
+                Online applications are available for print-off from the <a id="link2" href="application.html" target="_blank"><b>applications</b></a> page.<br><br><br><br><br>
+                Here at Barone, we are dedicated to being as eco-friendly as possible. That's why we have pledge to become carbon neutral by the year <b>2032</b>!
             </p>
+        </div> 
 
-            <figure>
-                <img src="client_images/baroneTruck.png" alt="Truck" class="center2">
-            </figure>
-        </section>
+        <div class="newsBox">
+            <h3 style="text-align: center;">Upcoming Dates</h3>
+            <ul>
+                <li><b>We will be closed on 5/12 for Mother's Day.</b></li>
+                <li><b>We will close early on 5/31 @ 2pm.</b></li>
+                <li><b>Beginning in July, we will be testing out new routes. Stay tuned for details.</b></li>
+            </ul>
+        </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Barone Sanitation has been proudly owned and operated by the Barone family since 1930. Barone Sanitation can take care of any trash no matter how big or messy. 
-                We've been voted New Jersey's best sanitation site fifteen times over the last 40 years.
-                Dick himself has worked in waste management since 1972 and is proud to serve the greater NJ area.
-            </p>
-
-            <figure>
-                <img src="client_images/dickBarone.png" alt="Dick Barone" class="center">
-                <figcaption class="caption">Dick Barone, Owner/Operator</figcaption>
-            </figure>
-        </section>
-
-        <section id="locations">
-            <h2>Locations</h2>
-            <p>We have three sites for garbage dropoff located at:</p>
-                <ul id="list">
-                    <li>275 Broadway, Jersey City, NJ, 07306 <a id="link2" href="https://www.google.com/maps/place/275+Broadway,+Jersey+City,+NJ+07306/@40.7383691,-74.0833526,17z/data=!3m1!4b1!4m6!3m5!1s0x89c256d772fef92f:0x6b206b450d290b87!8m2!3d40.7383651!4d-74.0807723!16s%2Fg%2F11fhn1_v0x?entry=ttu" target="_blank">Map View</a></li>
-                    <li>480 Wilson Ave, Newark, NJ, 07105 <a id="link2" href="https://www.google.com/maps/place/M+%26+M+Sanitation+Corporation/@40.7157765,-74.1397451,15z/data=!4m6!3m5!1s0x89c253c244f0c8bf:0x652fd2558a3e4982!8m2!3d40.7157765!4d-74.1397451!16s%2Fg%2F1tl0y7p5?entry=ttu" target="_blank">Map View</a></li>
-                    <li>847 Flora St, Elizabeth, NJ, 07201 <a id="link2" href="https://www.google.com/maps/place/WM+-+Elizabeth+CORe+Facility/@40.6679416,-74.1982594,15z/data=!4m6!3m5!1s0x89c25325aa55d1df:0xf172b292a9315940!8m2!3d40.6679416!4d-74.1982594!16s%2Fg%2F11qgyjwf7r?entry=ttu" target="_blank">Map View</a></li>
-                </ul>
-                <p>All of our sites are open from 4am-2pm Monday-Friday and 6am-4pm Saturday-Sunday.
-                We accept trash bags, wood, metal, glass, plastic, styrofoam, and recycling.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                Main Site Address: 275 Broadway, Jersey City, NJ, 07306
-            </p>
-            <p>
-                Phone: 670-221-4736
-            </p>
-            <p>
-                Email: baronesanitation@gmail.com
-            </p>
-            <p>
-                Fax: 4412509467
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0754582750956!2d-74.08077229999999!3d40.738365099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c256d772fef92f%3A0x6b206b450d290b87!2s275%20Broadway%2C%20Jersey%20City%2C%20NJ%2007306!5e0!3m2!1sen!2sus!4v1713146168331!5m2!1sen!2sus" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <section id="application">
-            <h2>Application</h2>
-            <p>This is the application page for Barone Sanitation. You may print off a <a id="link2" href="https://raec.rocklinusd.org/documents/GradPortfolioFiles/Standard%20Application.pdf" target="_blank"><b>paper copy</b></a> and bring it in-person or we have an online version available below.</p>
-            <div id="apply-form">
-                <form action="#" method="post" id="apply-form">
-                    <fieldset id="main-field">
-                        <label for="name">Name: <input id="name" name="name" type="text" required></label><br>
-                        <label for="address">Address: <input id="address" name="address" type="text" required></label><br>
-                        <label for="personal-background">Personal Background: <input id="personal-background" name="personal-background" type="text" required></label><br>
-                        <label for="professional-background">Professional Background: <input id="professional-background" name="professional-background" type="text" required></label><br>
-                        <label for="academic-background">Academic Background: <input id="professional-background" name="professional-background" type="text" required></label><br>
-                        <label for="upload-resume">Upload Resume: <input id="upload-resume" name="upload-resume" type="file" accpet="image/jpeg" required></label>
-                    </fieldset>
-                    <input type="reset" value="Reset"><input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
-
-        <section id="routes">
-            <h2>Routes</h2>
-            <p style="text-align:center">
-                Everything within the circle is included in our routes and available for pickup.
-            </p>
-            <figure>
-                <img src="client_images/routes.png" alt="routes" class="center2">
-            </figure>
-        </section>
-   </main>
-
-   <footer id="footer">
-        <p>Page built by <a href="cooljaguar.com" target="_blank">Cool Jaguar LLC</a> &copy; 2023, <a href="https://freecodecamp.org/certification/Cage/responsive-web-design" 
-            target="_blank">Certified in RWD</a>, <a href="https://www.freecodecamp.org/certification/Cage/javascript-algorithms-and-data-structures-v8" target="_blank">Certified in JS</a></p>
-        <p><i>"If money could buy better, there'd be nothing to buy."</i></p>
-
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        <h2>Partnered With</h2>
+        <a href="https://www.nj.gov/governor/climateaction/" target="_blank">
+            <img class="center4" src="client_images/dept-logo.jpg">
         </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        <a href="https://greeninitiative.eco/" target="_blank">
+            <img class="center4" src="client_images/logo-green-initiative-3001002912222.png">
         </a>
-        <a href="https://wave.webaim.org/report#/" id="validation_link_disability"> 
-            <img style="border:0;width:88px;height:31px" src="/itis3135/images/button_validation_wcag.png" alt="Valid Disabiliy/Accessibility Design!">  
-        </a>
-        <button type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href', '');});">No CSS</button>
-    </footer>
+    </main>
 
-    <script src="scripts/include.js"></script> 
+    <div data-include="cfooter.html"></div>
+    <script src="/scripts/include.js"></script> 
     <script src="client.js"></script>
         <script>
             document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
