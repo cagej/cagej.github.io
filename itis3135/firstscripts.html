@@ -23,12 +23,11 @@
                 <label for="feeling">How are we feeling?: <input type="text" id="feeling" placeholder="Good" required></label>
                 <label for="number-entry">Enter a number between 1-10: <input type="number" id="number-entry" min="0" max="10" placeholder="0-10" required></label>
             </fieldset>
-            <input type="submit">
+            <input type="submit" value="Submit">
         </form>
 
-        <img hidden id="myimg" src="images/honda_accord.jpg">
-
         <h3>Five Functions</h3>
+        <img hidden id="myimg" src="images/honda_accord.jpg" alt="honda">
         <div>
             <button onclick="toggle();" id="honda">Honda</button>
             <button id="whiteout">Flashbang</button>
@@ -37,8 +36,6 @@
             <button id="jaguarGrowl">Grrrr</button>
         </div>
     </main>
-
-    <div class="myimage" data-image="myimage">ll</div>
 
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script> 
