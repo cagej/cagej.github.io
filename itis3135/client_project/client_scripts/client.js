@@ -66,3 +66,26 @@ applyForm.addEventListener('submit', (e) => {
     e.preventDefault();
     jobExp();
 });
+
+function watchWords() {
+    var watch_words = ['newark', 'elizabeth', 'jersey city'];
+    var textvalue = document.getElementById("words").value;
+
+    for(var i=0; i<watch_words.length; i++) {
+        if (~textvalue.toLowerCase().indexOf(watch_words[i])) {
+
+        if(watch_words[i] == 'newark') {
+            alert('You are eligible for pickup services!');
+        }
+      
+        if(watch_words[i] == 'elizabeth') {
+            alert('You are eligible for pickup services!');
+        }
+      
+        if(watch_words[i] == 'jersey city') {
+            alert('You are eligible for pickup services!');
+        }
+    }
+  }
+}
+

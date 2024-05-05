@@ -19,6 +19,50 @@
         color: darkred;
         border-bottom: 3px solid darkred;
     }
+    
+    .searchContainer {
+        display: grid;
+        place-items: center;
+        padding-bottom: 25%;
+    }
+
+    .routeCss input[type=text] {
+        justify-content: center;
+        align-content: center;
+        width: 700px;
+        border: 2px solid;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: .3s;
+    }
+
+    input[type=text]:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 8px 0 dodgerblue;
+    }
+
+    .searchBox input[type=text] {
+        padding-left: 40px;
+    }
+
+    .searchBox {
+        position: relative;
+    }
+
+    .searchBox i {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        padding: 13px 9px;
+        transition: .3s;
+    }
+
+    .searchBox input[type=text]:focus + i {
+        color: dodgerblue;
+    }
 
     .logo {
         position: absolute; 
