@@ -41,7 +41,7 @@ addWorkBtn.addEventListener('click', () => {
 const jobExp = () => {
     const HTMLString = 
     `
-    <p>Thank you applying at Barone Sanitation! You will recieve a phone call within the next 7 business days regarding you application status.</p>
+    <p><b>Thank you applying at Barone Sanitation! You will recieve a phone call within the next 7 business days regarding you application status.</b></p>
     `; 
 
     formContainer.innerHTML = HTMLString;

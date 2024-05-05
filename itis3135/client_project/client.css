@@ -88,7 +88,7 @@
         height: 400px;
     }
 
-    #link2 {
+    .link2 {
         text-shadow: none;
         color: darkred;
     }
@@ -134,7 +134,7 @@
         text-align: center;
     }
 
-    #dropdown {
+    .dropdown {
         height: 25px;
     }
 

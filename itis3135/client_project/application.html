@@ -21,7 +21,7 @@
     </header>
     <main id="application">
         <h2>Application</h2>
-        <p>This is the application page for Barone Sanitation. You may print off a <a id="link2" href="https://raec.rocklinusd.org/documents/GradPortfolioFiles/Standard%20Application.pdf" target="_blank"><b>paper copy</b></a> and bring it in-person or we have an online version available below.</p>
+        <p>This is the application page for Barone Sanitation. You may print off a <a class="link2" href="https://raec.rocklinusd.org/documents/GradPortfolioFiles/Standard%20Application.pdf" target="_blank"><b>paper copy</b></a> and bring it in-person or we have an online version available below.</p>
         
         <div id="form-container">
 
@@ -31,8 +31,8 @@
                     <label for="name">Name: <input id="name" name="name" type="text" required></label><br>
                     <label for="address">Address: <input id="address" name="address" type="text" required></label><br>
                     <label for="age">Age: <input id="age" name="age" type="number" required></label><br>
-                    <label for="citizen">Do you have a valid work license?
-                        <select id="dropdown">
+                    <label for="citizen">Do you have a valid work license? <input style="display:none" name="citizen">
+                        <select class="dropdown" for="citizen">
                             <option>Yes</option>
                             <option>No</option>
                         </select>
@@ -49,7 +49,7 @@
 
                 <fieldset id="academic-field">
                     <legend>Select your highest level of education</legend>
-                    <select id="dropdown">
+                    <select class="dropdown">
                         <option>High School Diploma/GED</option>
                         <option>Associate's Degree</option>
                         <option>Bachelor's Degree</option>
@@ -77,8 +77,9 @@
             <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
         </a>
     </footer>
-        <script src="/scripts/include.js"></script> 
-        <script src="client.js"></script>
+
+        <script src="client_scripts/client_include.js"></script> 
+        <script src="client_scripts/client.js"></script>
         <script>
             document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
